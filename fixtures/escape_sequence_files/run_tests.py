@@ -36,7 +36,7 @@ def reset_terminal():
 def test():
     count = 0
     passed = 0
-    for i, testfile in enumerate(sorted(glob(os.path.join(BASE_DIR, '*.in')))):
+    for testfile in sorted(glob(os.path.join(BASE_DIR, '*.in'))):
         count += 1
         log(False, os.path.basename(testfile))
         reset_terminal()
